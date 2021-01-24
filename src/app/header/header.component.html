@@ -1,0 +1,25 @@
+<div class="navbar">
+  <div style="cursor: pointer" (click)="sidebarStateChange()">
+    <mat-icon style="color: white" aria-hidden="false" aria-label="Example menu icon">menu</mat-icon>
+  </div>
+</div>
+<nav [ngClass]="sidebar ? 'nav-menu active' : 'nav-menu'">
+  <ul class="nav-menu-item" (click)="sidebarStateChange()">
+    <li class="navbar-toggle">
+      <a style="cursor: pointer">
+        <mat-icon class="white-icon" aria-hidden="false" aria-label="Example close icon">close</mat-icon>
+      </a>
+    </li>
+    <li class="nav-text">
+      <a routerLink='/dashboard'>
+        <mat-icon class="white-icon" aria-hidden="false" aria-label="Example dashboard icon">dashboard</mat-icon>
+        Dashboard
+      </a>
+    </li>
+    <li class="nav-text">
+      <a routerLink='/table'>
+        <mat-icon class="white-icon" aria-hidden="false" aria-label="Example table icon">table</mat-icon>Table
+      </a>
+    </li>
+  </ul>
+</nav>

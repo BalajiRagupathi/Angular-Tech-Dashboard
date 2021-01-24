@@ -1,0 +1,17 @@
+/* Loading */
+.loading{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.chart-diplay {
+  display: flex;
+}
+
+.chart-diplay  > div {
+  margin: 10px;
+  padding: 20px;
+}
